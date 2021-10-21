@@ -1,0 +1,170 @@
+# Compile of Master.sv was successful with warnings.
+# Compile of Register_File.sv was successful.
+# Compile of Slave.sv failed with 1 errors.
+# Compile of sdsu_bus_tb.sv failed with 1 errors.
+# 4 compiles, 2 failed with 2 errors.
+# Compile of Master.sv was successful with warnings.
+# Compile of Register_File.sv was successful.
+# Compile of Slave.sv failed with 3 errors.
+# Compile of sdsu_bus_tb.sv was successful.
+# 4 compiles, 1 failed with 3 errors.
+# Compile of Slave.sv failed with 2 errors.
+# Compile of Slave.sv was successful.
+vsim -gui work.sdsu_bus_tb
+# vsim -gui work.sdsu_bus_tb 
+# Start time: 00:07:12 on Oct 22,2021
+# Loading sv_std.std
+# Loading work.sdsu_bus_tb
+# Loading work.Master
+# Loading work.Register_File
+# Loading work.Slave
+# ** Error: (vsim-8220) This or another usage of 'register_file.address' inconsistent with 'net' object.
+#    Time: 0 ps  Iteration: 0  Instance: /sdsu_bus_tb/master File: C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Master.sv Line: 34
+# ** Error: (vsim-8220) This or another usage of 'register_file.data' inconsistent with 'net' object.
+#    Time: 0 ps  Iteration: 0  Instance: /sdsu_bus_tb/master File: C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Master.sv Line: 35
+# ** Error: (vsim-8220) This or another usage of 'register_file.exec' inconsistent with 'net' object.
+#    Time: 0 ps  Iteration: 0  Instance: /sdsu_bus_tb/master File: C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Master.sv Line: 36
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'register_file'.  Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /sdsu_bus_tb/master/register_file File: C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Master.sv Line: 18
+# ** Warning: (vsim-3722) C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Master.sv(18): [TFMPC] - Missing connection for port 'result_data'.
+# ** Error: (vsim-3063) Port 'register_data' not found in the connected module (6th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /sdsu_bus_tb/slave File: C:/Users/Mariami/Desktop/SDSU_BUS/testbenches/sdsu_bus_tb.sv Line: 16
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'data'. The port definition is at: C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Register_File.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /sdsu_bus_tb/slave/register_file File: C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Slave.sv Line: 52
+# Error loading design
+# End time: 00:07:12 on Oct 22,2021, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 12
+# Compile of Master.sv was successful with warnings.
+# Compile of Register_File.sv was successful.
+# Compile of Slave.sv was successful.
+# Compile of sdsu_bus_tb.sv was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work.sdsu_bus_tb
+# vsim -gui work.sdsu_bus_tb 
+# Start time: 00:10:54 on Oct 22,2021
+# Loading sv_std.std
+# Loading work.sdsu_bus_tb
+# Loading work.Master
+# Loading work.Register_File
+# Loading work.Slave
+# ** Error: (vsim-8220) This or another usage of 'register_file.address' inconsistent with 'net' object.
+#    Time: 0 ps  Iteration: 0  Instance: /sdsu_bus_tb/master File: C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Master.sv Line: 58
+# ** Error: (vsim-8220) This or another usage of 'register_file.data' inconsistent with 'net' object.
+#    Time: 0 ps  Iteration: 0  Instance: /sdsu_bus_tb/master File: C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Master.sv Line: 59
+# ** Error: (vsim-8220) This or another usage of 'register_file.exec' inconsistent with 'net' object.
+#    Time: 0 ps  Iteration: 0  Instance: /sdsu_bus_tb/master File: C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Master.sv Line: 60
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'register_file'.  Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /sdsu_bus_tb/master/register_file File: C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Master.sv Line: 18
+# ** Warning: (vsim-3722) C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Master.sv(18): [TFMPC] - Missing connection for port 'result_data'.
+# ** Error: (vsim-3063) Port 'register_data' not found in the connected module (6th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /sdsu_bus_tb/slave File: C:/Users/Mariami/Desktop/SDSU_BUS/testbenches/sdsu_bus_tb.sv Line: 16
+# Error loading design
+# End time: 00:10:54 on Oct 22,2021, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 4
+# Compile of Master.sv was successful with warnings.
+vsim -gui work.sdsu_bus_tb
+# vsim -gui work.sdsu_bus_tb 
+# Start time: 00:15:23 on Oct 22,2021
+# Loading sv_std.std
+# Loading work.sdsu_bus_tb
+# Loading work.Master
+# Loading work.Register_File
+# Loading work.Slave
+# ** Error: (vsim-8220) This or another usage of 'register_file.address' inconsistent with 'net' object.
+#    Time: 0 ps  Iteration: 0  Instance: /sdsu_bus_tb/master File: C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Master.sv Line: 58
+# ** Error: (vsim-8220) This or another usage of 'register_file.data' inconsistent with 'net' object.
+#    Time: 0 ps  Iteration: 0  Instance: /sdsu_bus_tb/master File: C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Master.sv Line: 59
+# ** Error: (vsim-8220) This or another usage of 'register_file.exec' inconsistent with 'net' object.
+#    Time: 0 ps  Iteration: 0  Instance: /sdsu_bus_tb/master File: C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Master.sv Line: 60
+# ** Error: (vsim-3063) Port 'register_data' not found in the connected module (4th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /sdsu_bus_tb/master/register_file File: C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Master.sv Line: 18
+# ** Error: (vsim-3063) Port 'register_data' not found in the connected module (6th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /sdsu_bus_tb/slave File: C:/Users/Mariami/Desktop/SDSU_BUS/testbenches/sdsu_bus_tb.sv Line: 16
+# Error loading design
+# End time: 00:15:24 on Oct 22,2021, Elapsed time: 0:00:01
+# Errors: 5, Warnings: 2
+# Compile of Master.sv was successful with warnings.
+# Compile of Register_File.sv was successful.
+# Compile of Slave.sv was successful.
+# Compile of sdsu_bus_tb.sv was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work.sdsu_bus_tb
+# vsim -gui work.sdsu_bus_tb 
+# Start time: 00:17:33 on Oct 22,2021
+# Loading sv_std.std
+# Loading work.sdsu_bus_tb
+# Loading work.Master
+# Loading work.Register_File
+# Loading work.Slave
+# ** Error: (vsim-8220) This or another usage of 'register_file.address' inconsistent with 'net' object.
+#    Time: 0 ps  Iteration: 0  Instance: /sdsu_bus_tb/master File: C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Master.sv Line: 58
+# ** Error: (vsim-8220) This or another usage of 'register_file.data' inconsistent with 'net' object.
+#    Time: 0 ps  Iteration: 0  Instance: /sdsu_bus_tb/master File: C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Master.sv Line: 59
+# ** Error: (vsim-8220) This or another usage of 'register_file.exec' inconsistent with 'net' object.
+#    Time: 0 ps  Iteration: 0  Instance: /sdsu_bus_tb/master File: C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Master.sv Line: 60
+# ** Error: (vsim-3063) Port 'register_data' not found in the connected module (4th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /sdsu_bus_tb/master/register_file File: C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Master.sv Line: 18
+# Error loading design
+# End time: 00:17:34 on Oct 22,2021, Elapsed time: 0:00:01
+# Errors: 4, Warnings: 2
+# Compile of Master.sv was successful with warnings.
+vsim -gui work.sdsu_bus_tb
+# vsim -gui work.sdsu_bus_tb 
+# Start time: 00:23:06 on Oct 22,2021
+# Loading sv_std.std
+# Loading work.sdsu_bus_tb
+# Loading work.Master
+# Loading work.Register_File
+# Loading work.Slave
+# ** Error: (vsim-8220) This or another usage of 'register_file.address' inconsistent with 'net' object.
+#    Time: 0 ps  Iteration: 0  Instance: /sdsu_bus_tb/master File: C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Master.sv Line: 58
+# ** Error: (vsim-8220) This or another usage of 'register_file.data' inconsistent with 'net' object.
+#    Time: 0 ps  Iteration: 0  Instance: /sdsu_bus_tb/master File: C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Master.sv Line: 59
+# ** Error: (vsim-8220) This or another usage of 'register_file.exec' inconsistent with 'net' object.
+#    Time: 0 ps  Iteration: 0  Instance: /sdsu_bus_tb/master File: C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Master.sv Line: 60
+# Error loading design
+# End time: 00:23:07 on Oct 22,2021, Elapsed time: 0:00:01
+# Errors: 3, Warnings: 2
+# Compile of Master.sv was successful with warnings.
+vsim -gui work.sdsu_bus_tb
+# vsim -gui work.sdsu_bus_tb 
+# Start time: 00:24:52 on Oct 22,2021
+# Loading sv_std.std
+# Loading work.sdsu_bus_tb
+# Loading work.Master
+# Loading work.Register_File
+# Loading work.Slave
+add wave -position end  sim:/sdsu_bus_tb/clk
+add wave -position end  sim:/sdsu_bus_tb/ready
+add wave -position end  sim:/sdsu_bus_tb/result_data
+add wave -position end  sim:/sdsu_bus_tb/valid
+add wave -position end  sim:/sdsu_bus_tb/start
+add wave -position end  sim:/sdsu_bus_tb/address
+add wave -position end  sim:/sdsu_bus_tb/data
+add wave -position end sim:/sdsu_bus_tb/master/*
+add wave -position end sim:/sdsu_bus_tb/master/register_file/*
+add wave -position end sim:/sdsu_bus_tb/slave/*
+add wave -position end sim:/sdsu_bus_tb/slave/register_file/*
+run
+quit -sim
+# End time: 00:48:52 on Oct 22,2021, Elapsed time: 0:24:00
+# Errors: 0, Warnings: 2
+# Compile of Master.sv was successful with warnings.
+# Compile of Register_File.sv was successful.
+# Compile of Slave.sv was successful.
+# Compile of sdsu_bus_tb.sv was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work.sdsu_bus_tb
+# vsim -gui work.sdsu_bus_tb 
+# Start time: 00:49:11 on Oct 22,2021
+# Loading sv_std.std
+# Loading work.sdsu_bus_tb
+# Loading work.Master
+# Loading work.Register_File
+# Loading work.Slave
+add wave -position end sim:/sdsu_bus_tb/*
+add wave -position end sim:/sdsu_bus_tb/master/*
+add wave -position end sim:/sdsu_bus_tb/master/register_file/*
+add wave -position end sim:/sdsu_bus_tb/slave/*
+add wave -position end sim:/sdsu_bus_tb/slave/register_file/*
+run

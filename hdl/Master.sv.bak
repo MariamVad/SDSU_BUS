@@ -14,7 +14,7 @@ module Master(
 );
 
 //logic fixed_seed = 31'b1111_1111_1111_1111_1111_1111_1111_1111;
-logic[3:0] i = 3'b000;
+logic[2:0] i = 3'b000;
 
 initial begin
 exec <= 0;
@@ -26,14 +26,12 @@ always @(posedge clk) begin
 
     if(ready == 1) i <= 0;
     if(i == 0 || i == 2 || i == 4)  begin 
-        
         exec <= 1;
         valid <= 1;
-        //data <= $random (64'd4294967296);
-        data <= $random;
+        data <= $random (64'd4294967296);
 
         if(i == 0) address <= 1;
-        else if (i == 2) begin address <= 2; start <= 0; end
+        else if (i == 2) address <= 2;
         else begin
             address <= 0;
             start <= 1;

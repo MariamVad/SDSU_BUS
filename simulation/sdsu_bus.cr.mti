@@ -1,9 +1,9 @@
-C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Multiplication.sv {1 {vlog -work work -sv -stats=none C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Multiplication.sv
+C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Top.sv {1 {vlog -work work -sv -stats=none C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Top.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module Multiplication
+-- Compiling module Top
 
 Top level modules:
-	Multiplication
+	Top
 
 } {} {}} C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Slave.sv {1 {vlog -work work -sv -stats=none C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Slave.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -12,12 +12,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	Slave
 
-} {} {}} C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Top.sv {1 {vlog -work work -sv -stats=none C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Top.sv
+} {} {}} C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Register_File.sv {1 {vlog -work work -sv -stats=none C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Register_File.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module Top
+-- Compiling module Register_File
 
 Top level modules:
-	Top
+	Register_File
 
 } {} {}} C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Master.sv {1 {vlog -work work -sv -stats=none C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Master.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -25,13 +25,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 
 Top level modules:
 	Master
-
-} {} {}} C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Register_File.sv {1 {vlog -work work -sv -stats=none C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Register_File.sv
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module Register_File
-
-Top level modules:
-	Register_File
 
 } {} {}} C:/Users/Mariami/Desktop/SDSU_BUS/testbenches/sdsu_bus_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/Mariami/Desktop/SDSU_BUS/testbenches/sdsu_bus_tb.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020

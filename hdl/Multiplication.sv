@@ -61,6 +61,32 @@
 //     assign c = (State == 33) ? ACC[15:0] : 0;
 // endmodule
 
+// module Multiplication(
+//     input logic clk,
+//     input logic start, 
+//     input logic[15:0] a,
+//     input logic[15:0] b,
+//     output logic[31:0] c,
+//     output logic calculated
+// );
+
+// logic[31:0] temp = 0;
+// logic[15:0] multiplier;
+
+//     always @(posedge clk) begin
+        
+//         if(start == 1) begin
+//             c <= a * b;
+//             calculated <= 1;
+//         end
+    
+//     end
+
+// endmodule
+
+
+
+
 module Multiplication(
     input logic clk,
     input logic start, 
@@ -70,14 +96,39 @@ module Multiplication(
     output logic calculated
 );
 
-logic[31:0] temp = 0;
-logic[15:0] multiplier;
+logic[31:0] M = 32'b0000_0000_0000_0000_0000_0000_0000_0000 + a;
+logic[31:0] Q = 32'b0000_0000_0000_0000_0000_0000_0000_0000 + b;
+logic[31:0] acc = 32'b0000_0000_0000_0000_0000_0000_0000_0000;
+logic[5:0] count = 0;
+
 
     always @(posedge clk) begin
         
         if(start == 1) begin
-            c <= a * b;
-            calculated <= 1;
+            if(count == 0) begin
+                M = 32'b0000_0000_0000_0000_0000_0000_0000_0000 + a;
+                Q = 32'b0000_0000_0000_0000_0000_0000_0000_0000 + b;
+                acc = 32'b0000_0000_0000_0000_0000_0000_0000_0000;
+            end
+            if(count < 32) begin
+
+               // if(Q[a]) begin
+                    count <= count + 1;
+                    acc <= acc + M;
+                    {acc, Q} <= {1'b0, acc, Q};
+                //end
+                //else begin
+                //count <= count + 1;
+                //{acc, Q} <= {1'b0, acc, Q};
+                //end
+            end 
+            
+            else begin
+                calculated <= 1;
+                c <= {acc, Q};  
+                count <= 0;
+            end    
+	
         end
     
     end

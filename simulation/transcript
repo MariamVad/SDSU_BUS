@@ -388,3 +388,255 @@ run
 quit -sim
 # End time: 19:19:34 on Oct 22,2021, Elapsed time: 0:02:46
 # Errors: 0, Warnings: 1
+# Compile of Master.sv was successful.
+# Compile of Register_File.sv was successful.
+# Compile of Slave.sv was successful.
+# Compile of sdsu_bus_tb.sv was successful.
+# Compile of Top.sv was successful.
+# Compile of Multiplication.sv was successful.
+# 6 compiles, 0 failed with no errors.
+vsim work.sdsu_bus_tb
+# vsim work.sdsu_bus_tb 
+# Start time: 19:32:47 on Oct 22,2021
+# Loading sv_std.std
+# Loading work.sdsu_bus_tb
+# Loading work.Top
+# Loading work.Master
+# Loading work.Register_File
+# Loading work.Slave
+# Loading work.Multiplication
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (32) for port 'a'. The port definition is at: C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Multiplication.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /sdsu_bus_tb/top/slave/mult File: C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Slave.sv Line: 25
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Multiplication.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /sdsu_bus_tb/top/slave/mult File: C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Slave.sv Line: 25
+add wave -position end sim:/sdsu_bus_tb/top/master/*
+add wave -position end sim:/sdsu_bus_tb/top/slave/*
+add wave -position end sim:/sdsu_bus_tb/top/slave/mult/*
+run
+# Break key hit
+# Break in Module Multiplication at C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Multiplication.sv line 17
+quit -sim
+# End time: 19:40:59 on Oct 22,2021, Elapsed time: 0:08:12
+# Errors: 0, Warnings: 5
+# Compile of Master.sv was successful.
+# Compile of Register_File.sv was successful.
+# Compile of Slave.sv was successful.
+# Compile of sdsu_bus_tb.sv was successful.
+# Compile of Top.sv was successful.
+# Compile of Multiplication.sv was successful.
+# 6 compiles, 0 failed with no errors.
+vsim work.sdsu_bus_tb
+# vsim work.sdsu_bus_tb 
+# Start time: 19:43:26 on Oct 22,2021
+# Loading sv_std.std
+# Loading work.sdsu_bus_tb
+# Loading work.Top
+# Loading work.Master
+# Loading work.Register_File
+# Loading work.Slave
+# Loading work.Multiplication
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (32) for port 'a'. The port definition is at: C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Multiplication.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /sdsu_bus_tb/top/slave/mult File: C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Slave.sv Line: 25
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Multiplication.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /sdsu_bus_tb/top/slave/mult File: C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Slave.sv Line: 25
+add wave -position end sim:/sdsu_bus_tb/top/master/*
+add wave -position end sim:/sdsu_bus_tb/top/slave/*
+add wave -position end sim:/sdsu_bus_tb/top/slave/mult/*
+run
+# Break key hit
+# Break in Module Multiplication at C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Multiplication.sv line 21
+quit -sim
+# End time: 19:45:38 on Oct 22,2021, Elapsed time: 0:02:12
+# Errors: 0, Warnings: 4
+# Reopencommand error: wrong # args: should be "::AbstractDataset::fromId id"
+# wrong # args: should be "::AbstractDataset::fromId id"
+#     (procedure "::AbstractDataset::fromId" body line 1)
+#     invoked from within
+# "AbstractDataset::fromId"
+#     ("uplevel" body line 1)
+#     invoked from within
+# "uplevel AbstractDataset::fromId $id"
+#     (procedure "AbstractDatasetCreate" line 2)
+#     invoked from within
+# "AbstractDatasetCreate [$w cget -window_data]"
+#     (procedure "QStructure::ReOpenWindow" line 11)
+#     invoked from within
+# "QStructure::ReOpenWindow .main_pane.structure"
+#     ("eval" body line 1)
+#     invoked from within
+# "eval [$windowobj cget -reopencommand] $windowobj "
+vsim work.sdsu_bus_tb
+# vsim work.sdsu_bus_tb 
+# Start time: 19:46:37 on Oct 22,2021
+# Loading sv_std.std
+# Loading work.sdsu_bus_tb
+# Loading work.Top
+# Loading work.Master
+# Loading work.Register_File
+# Loading work.Slave
+# Loading work.Multiplication
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (32) for port 'a'. The port definition is at: C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Multiplication.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /sdsu_bus_tb/top/slave/mult File: C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Slave.sv Line: 25
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Multiplication.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /sdsu_bus_tb/top/slave/mult File: C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Slave.sv Line: 25
+add wave -position end sim:/sdsu_bus_tb/top/master/*
+add wave -position end sim:/sdsu_bus_tb/top/slave/*
+add wave -position end sim:/sdsu_bus_tb/top/slave/mult/*
+run
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Break key hit
+# Break in Module Multiplication at C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Multiplication.sv line 19
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+quit -sim
+# End time: 20:18:25 on Oct 22,2021, Elapsed time: 0:31:48
+# Errors: 0, Warnings: 3
+# Compile of Master.sv was successful.
+# Compile of Register_File.sv was successful.
+# Compile of Slave.sv was successful.
+# Compile of sdsu_bus_tb.sv was successful.
+# Compile of Top.sv was successful.
+# Compile of Multiplication.sv was successful.
+# 6 compiles, 0 failed with no errors.
+vsim work.sdsu_bus_tb
+# vsim work.sdsu_bus_tb 
+# Start time: 20:19:09 on Oct 22,2021
+# Loading sv_std.std
+# Loading work.sdsu_bus_tb
+# Loading work.Top
+# Loading work.Master
+# Loading work.Register_File
+# Loading work.Slave
+# Loading work.Multiplication
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (32) for port 'a'. The port definition is at: C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Multiplication.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /sdsu_bus_tb/top/slave/mult File: C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Slave.sv Line: 25
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Multiplication.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /sdsu_bus_tb/top/slave/mult File: C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Slave.sv Line: 25
+add wave -position end sim:/sdsu_bus_tb/top/master/*
+add wave -position end sim:/sdsu_bus_tb/top/slave/*
+add wave -position end sim:/sdsu_bus_tb/top/slave/mult/*
+run
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Break key hit
+# Break in Module Multiplication at C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Multiplication.sv line 21
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+quit -sim
+# End time: 20:21:06 on Oct 22,2021, Elapsed time: 0:01:57
+# Errors: 0, Warnings: 4
+# Compile of Master.sv was successful.
+# Compile of Register_File.sv was successful.
+# Compile of Slave.sv was successful.
+# Compile of sdsu_bus_tb.sv was successful.
+# Compile of Top.sv was successful.
+# Compile of Multiplication.sv was successful.
+# 6 compiles, 0 failed with no errors.
+vsim work.sdsu_bus_tb
+# vsim work.sdsu_bus_tb 
+# Start time: 21:06:25 on Oct 22,2021
+# Loading sv_std.std
+# Loading work.sdsu_bus_tb
+# Loading work.Top
+# Loading work.Master
+# Loading work.Register_File
+# Loading work.Slave
+# Loading work.Multiplication
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (32) for port 'a'. The port definition is at: C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Multiplication.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /sdsu_bus_tb/top/slave/mult File: C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Slave.sv Line: 25
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Multiplication.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /sdsu_bus_tb/top/slave/mult File: C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Slave.sv Line: 25
+add wave -position end sim:/sdsu_bus_tb/top/master/*
+add wave -position end sim:/sdsu_bus_tb/top/slave/*
+add wave -position end sim:/sdsu_bus_tb/top/slave/mult/*
+run
+add wave -position end  sim:/sdsu_bus_tb/top/register_file/RegisterFile
+run
+quit -sim
+# End time: 22:01:20 on Oct 22,2021, Elapsed time: 0:54:55
+# Errors: 0, Warnings: 4
+# Compile of Multiplication.sv failed with 6 errors.
+# Compile of Multiplication.sv failed with 2 errors.
+# Compile of Multiplication.sv failed with 3 errors.
+# Compile of Multiplication.sv was successful.
+vsim work.sdsu_bus_tb
+# vsim work.sdsu_bus_tb 
+# Start time: 22:06:12 on Oct 22,2021
+# Loading sv_std.std
+# Loading work.sdsu_bus_tb
+# Loading work.Top
+# Loading work.Master
+# Loading work.Register_File
+# Loading work.Slave
+# Loading work.Multiplication
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (32) for port 'a'. The port definition is at: C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Multiplication.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /sdsu_bus_tb/top/slave/mult File: C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Slave.sv Line: 25
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Multiplication.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /sdsu_bus_tb/top/slave/mult File: C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Slave.sv Line: 25
+add wave -position end sim:/sdsu_bus_tb/top/master/*
+add wave -position end sim:/sdsu_bus_tb/top/slave/*
+add wave -position end sim:/sdsu_bus_tb/top/slave/mult/*
+run
+quit -sim
+# End time: 22:22:35 on Oct 22,2021, Elapsed time: 0:16:23
+# Errors: 0, Warnings: 7
+# Compile of Master.sv was successful.
+# Compile of Register_File.sv was successful.
+# Compile of Slave.sv was successful.
+# Compile of sdsu_bus_tb.sv was successful.
+# Compile of Top.sv was successful.
+# Compile of Multiplication.sv failed with 3 errors.
+# 6 compiles, 1 failed with 3 errors.
+# Compile of Multiplication.sv failed with 1 errors.
+# Compile of Multiplication.sv was successful.
+vsim work.sdsu_bus_tb
+# vsim work.sdsu_bus_tb 
+# Start time: 22:26:24 on Oct 22,2021
+# Loading sv_std.std
+# Loading work.sdsu_bus_tb
+# Loading work.Top
+# Loading work.Master
+# Loading work.Register_File
+# Loading work.Slave
+# Loading work.Multiplication
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (32) for port 'a'. The port definition is at: C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Multiplication.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /sdsu_bus_tb/top/slave/mult File: C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Slave.sv Line: 25
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Multiplication.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /sdsu_bus_tb/top/slave/mult File: C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Slave.sv Line: 25
+add wave -position end sim:/sdsu_bus_tb/top/master/*
+add wave -position end sim:/sdsu_bus_tb/top/slave/*
+add wave -position end sim:/sdsu_bus_tb/top/slave/mult/*
+add wave -position end  sim:/sdsu_bus_tb/top/register_file/RegisterFile
+run
+# Break key hit
+# Break in Module Multiplication at C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Multiplication.sv line 22
+quit -sim
+# End time: 22:28:37 on Oct 22,2021, Elapsed time: 0:02:13
+# Errors: 0, Warnings: 6

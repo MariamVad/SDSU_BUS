@@ -20,8 +20,9 @@ logic[31:0] slave_data1;
 logic[31:0] slave_data2;
 logic[31:0] data;
 logic[31:0] incoming_address;
+logic calculated = 0;
 
-
+Multiplication mult(.clk(clk), .a(slave_data1), .b(slave_data2), .start(start), .c(result_data), .calculated(calculated));
 
 initial begin
 exec <= 0;
@@ -35,10 +36,10 @@ ready <= 0;
         exec <= 1;
         case (incoming_address)
             0: begin    
-                if(start == 1) begin
+                if(start == 1 && calculated == 1) begin
                     ready <= 1;
                     write <= 1;
-                    result_data <= slave_data1 * slave_data2;
+                   // result_data <= slave_data1 * slave_data2;
                     //exec <= 1;
                 end
 

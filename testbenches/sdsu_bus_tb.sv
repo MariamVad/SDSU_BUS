@@ -4,7 +4,7 @@ logic clk = 0;
 logic[31:0] result_data;
 
 
-always #10 clk <= ~clk;
+always #100 clk <= ~clk;
 
 Top top(clk, result_data);
 

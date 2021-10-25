@@ -30,7 +30,7 @@ always @(posedge clk) begin
         exec <= 1;
         valid <= 1;
         //data <= $random (64'd4294967296);
-        data <= $random;
+        data <= $random % 32768;
 
         if(i == 0) address <= 1;
         else if (i == 2) begin address <= 2; start <= 0; end

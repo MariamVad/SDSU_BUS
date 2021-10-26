@@ -96,30 +96,50 @@ module Multiplication(
     output logic calculated
 );
 
-logic[31:0] M = 32'b0000_0000_0000_0000_0000_0000_0000_0000 + a;
-logic[31:0] Q = 32'b0000_0000_0000_0000_0000_0000_0000_0000 + b;
-logic[31:0] acc = 32'b0000_0000_0000_0000_0000_0000_0000_0000;
+// logic[31:0] M = 32'b0000_0000_0000_0000_0000_0000_0000_0000 + a;
+// logic[31:0] Q = 32'b0000_0000_0000_0000_0000_0000_0000_0000 + b;
+// logic[31:0] acc = 32'b0000_0000_0000_0000_0000_0000_0000_0000;
+
+logic[15:0] M = 0;
+logic[15:0] Q = 0;
+logic[16:0] acc = 0;
 logic[5:0] count = 0;
+logic[32:0] temp = 0;
+
+// initial begin
+//     M  = 0;
+//     Q  = 0;
+// end
 
 
     always @(posedge clk) begin
         
         if(start == 1) begin
             if(count == 0) begin
-                M = 32'b0000_0000_0000_0000_0000_0000_0000_0000 + a;
-                Q = 32'b0000_0000_0000_0000_0000_0000_0000_0000 + b;
-                acc = 32'b0000_0000_0000_0000_0000_0000_0000_0000;
+                // M = 32'b0000_0000_0000_0000_0000_0000_0000_0000 + a;
+                // Q = 32'b0000_0000_0000_0000_0000_0000_0000_0000 + b;
+                // acc = 32'b0000_0000_0000_0000_0000_0000_0000_0000;
+                M = a;
+               
+                acc = 0;
+                // Q = b;
             end
-            if(count < 32) begin
+            if(count < 4) begin
+               
+                if(count == 0) Q <= b;
 
-               // if(Q[a]) begin
-                    count <= count + 1;
-                    acc <= acc + M;
-                    {acc, Q} <= {1'b0, acc, Q};
+                if(Q[0] == 1) acc = acc + M;
+               //if(Q[0]) begin
+                    
+                   // acc <= acc + M;
+                   temp = {1'b0, acc, Q};
+                   {acc, Q} = temp >> 1;
+                {acc, Q} = {1'b0, acc, Q};
+                 count = count + 1;
                 //end
                 //else begin
-                //count <= count + 1;
-                //{acc, Q} <= {1'b0, acc, Q};
+                  //  count <= count + 1;
+                    //{acc, Q} <= {1'b0, acc, Q};
                 //end
             end 
             

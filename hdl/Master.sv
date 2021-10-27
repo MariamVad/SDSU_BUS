@@ -32,13 +32,15 @@ always @(posedge clk) begin
         //data <= $random (64'd4294967296);
         data <= $random % (32768 + i);
         //data <= i + 10;
+        //data <= i + 2357;
+        //data <= 25;
 
         if(i == 0) address <= 1;
         else if (i == 2) begin address <= 2; start <= 0; end
         else begin
             address <= 0;
             start <= 1;
-            data <= start;
+            data <= 1;
         end
     end
 

@@ -89,7 +89,7 @@
 
 module Multiplication(
     input logic clk,
-    input logic start, 
+    input logic begin_calc, 
     input logic[15:0] a,
     input logic[15:0] b,
     output logic[31:0] c,
@@ -113,28 +113,26 @@ logic[32:0] temp = 0;
 
 
     always @(posedge clk) begin
-        
-        if(start == 1) begin
+        calculated <= 0;
+        if(begin_calc == 1) begin
             if(count == 0) begin
                 // M = 32'b0000_0000_0000_0000_0000_0000_0000_0000 + a;
                 // Q = 32'b0000_0000_0000_0000_0000_0000_0000_0000 + b;
                 // acc = 32'b0000_0000_0000_0000_0000_0000_0000_0000;
-                M = a;
-               
-                acc = 0;
+                M <= a;
+                Q <= b;
+                acc <= 0;
                 // Q = b;
             end
-            if(count < 4) begin
-               
-                if(count == 0) Q <= b;
-
+            if(count < 17) begin
+               // if( count == 0) Q = b;
                 if(Q[0] == 1) acc = acc + M;
                //if(Q[0]) begin
                     
                    // acc <= acc + M;
-                   temp = {1'b0, acc, Q};
+                   temp = { acc, Q};
                    {acc, Q} = temp >> 1;
-                {acc, Q} = {1'b0, acc, Q};
+               // {acc, Q} = {1'b0, acc, Q};
                  count = count + 1;
                 //end
                 //else begin

@@ -22,14 +22,13 @@ logic exec_s = 0;
 
 
 Master master(.clk(clk), .ready(ready), .result_data(result_data), .valid(valid), .start(start), .address(address), 
-    .data(data_init),  .exec(exec_m), .write(write_m) /*, .RegisterFile(RegisterFile)*/);
+    .data(data_init),  .exec(exec_m), .write(write_m) );
 
 Register_File register_file(.clk(clk), .address(address), .data_write(data),  .data_read(register_data), .write(write), .exec(exec) 
-//.RegisterFile(RegisterFile)
 );
 
 Slave slave(.clk(clk), .valid(valid), .start(start), .address(address), .ready(ready), .exec(exec_s), .write(write_s), .register_data(register_data),
-    .result_data(data_mult) /*, .RegisterFile(RegisterFile)*/);
+    .result_data(data_mult) );
 
 
 always @(*) begin
@@ -53,7 +52,7 @@ always @(*) begin
         exec <= exec_m;
         write <= write_m;
     end
-    else begin
+    else if (slave.exec == 1) begin
         data <= data_mult;
         exec <= exec_s;
         write <= write_s;

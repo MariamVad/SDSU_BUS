@@ -11,156 +11,156 @@ cModel Technology
 dC:/Users/Mariami/Desktop/arm_new/simulation
 vMaster
 Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-!s110 1635271843
+Z1 !s110 1635333477
 !i10b 1
-!s100 69D;WYB^:;7dci8nNkn783
-Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I9hSa8QZ77TW=1d;dO?BkW2
-Z2 VDg1SIo80bB@j0V0VzS_@n1
+!s100 ;IC_;V3WDI2OnK7AE4eil2
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IQS?kmX;OaM^O]Wz7YJ<^A1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
 S1
-Z3 dC:/Users/Mariami/Desktop/SDSU_BUS/simulation
-w1635271825
+Z4 dC:/Users/Mariami/Desktop/SDSU_BUS/simulation
+w1635324944
 8C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Master.sv
 FC:/Users/Mariami/Desktop/SDSU_BUS/hdl/Master.sv
-!i122 179
-L0 1 63
-Z4 OV;L;2020.1;71
+!i122 233
+Z5 L0 1 65
+Z6 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1635271843.000000
+Z7 !s108 1635333477.000000
 !s107 C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Master.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Master.sv|
 !i113 1
-Z6 o-work work -sv
-Z7 tCvgOpt 0
+Z8 o-work work -sv
+Z9 tCvgOpt 0
 n@master
 vMultiplication
 R0
-!s110 1635271846
+Z10 !s110 1635333478
 !i10b 1
-!s100 lknm8oAhgM1TXm7mKXR[D3
-R1
-Iz^fI5=YGo^n5@^_j6K>eE1
+!s100 56o6UN=DGAVP_l5lCWB7e1
 R2
-S1
+I3nj4dY6FDogK1WHH0KGnG3
 R3
-w1635261960
+S1
+R4
+w1635333397
 8C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Multiplication.sv
 FC:/Users/Mariami/Desktop/SDSU_BUS/hdl/Multiplication.sv
-!i122 184
-L0 90 67
-R4
+!i122 238
+L0 90 65
+R6
 r1
 !s85 0
 31
-!s108 1635271846.000000
+Z11 !s108 1635333478.000000
 !s107 C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Multiplication.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Multiplication.sv|
 !i113 1
-R6
-R7
+R8
+R9
 n@multiplication
 vRegister_File
 R0
-Z8 !s110 1635271844
+R1
 !i10b 1
 !s100 nl4knf0Y[DcKD]3G`]Si03
-R1
-I?8N4PXD:AF<`Y?@k7Zo513
 R2
-S1
+I?8N4PXD:AF<`Y?@k7Zo513
 R3
+S1
+R4
 w1634889020
 8C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Register_File.sv
 FC:/Users/Mariami/Desktop/SDSU_BUS/hdl/Register_File.sv
-!i122 180
+!i122 234
 L0 1 24
-R4
+R6
 r1
 !s85 0
 31
-R5
+R7
 !s107 C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Register_File.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Register_File.sv|
 !i113 1
-R6
-R7
+R8
+R9
 n@register_@file
 vsdsu_bus_tb
 R0
-R8
+R10
 !i10b 1
 !s100 Pe?CLn_?6>KznCO8jNL@W2
-R1
-IM9mQRZkUJXJjjE<QHY0<51
 R2
-S1
+IM9mQRZkUJXJjjE<QHY0<51
 R3
+S1
+R4
 w1634926940
 8C:/Users/Mariami/Desktop/SDSU_BUS/testbenches/sdsu_bus_tb.sv
 FC:/Users/Mariami/Desktop/SDSU_BUS/testbenches/sdsu_bus_tb.sv
-!i122 182
+!i122 236
 L0 1 11
-R4
+R6
 r1
 !s85 0
 31
-Z9 !s108 1635271844.000000
+R11
 !s107 C:/Users/Mariami/Desktop/SDSU_BUS/testbenches/sdsu_bus_tb.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Mariami/Desktop/SDSU_BUS/testbenches/sdsu_bus_tb.sv|
 !i113 1
-R6
-R7
+R8
+R9
 vSlave
 R0
-R8
+!s110 1635334382
 !i10b 1
-!s100 h=AahfZNC1WJ>S8hI1iUi2
-R1
-ITJNG@i4mEB@d070CiHSXG2
+!s100 J]UJ]]X_Ioj9YO5CFo9o:3
 R2
-S1
+I8N00=e<HdDd3BeVOkYhJ]3
 R3
-w1635198429
+S1
+R4
+w1635334375
 8C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Slave.sv
 FC:/Users/Mariami/Desktop/SDSU_BUS/hdl/Slave.sv
-!i122 181
-L0 1 68
-R4
+!i122 239
+L0 1 85
+R6
 r1
 !s85 0
 31
-R9
+!s108 1635334382.000000
 !s107 C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Slave.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Slave.sv|
 !i113 1
-R6
-R7
+R8
+R9
 n@slave
 vTop
 R0
-!s110 1635271845
+R10
 !i10b 1
-!s100 1_4<=mMb^]Q`aATh2[haj1
-R1
-IJU5n^8jDa;F2lkmAI5?EY2
+!s100 aNEMi>8[Y22mCUJNFFj293
 R2
-S1
+IF<c_c1`_QkYO>AjE:Y]6H0
 R3
-w1634905111
+S1
+R4
+w1635329973
 8C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Top.sv
 FC:/Users/Mariami/Desktop/SDSU_BUS/hdl/Top.sv
-!i122 183
-L0 1 65
-R4
+!i122 237
+R5
+R6
 r1
 !s85 0
 31
-!s108 1635271845.000000
+R11
 !s107 C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Top.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Mariami/Desktop/SDSU_BUS/hdl/Top.sv|
 !i113 1
-R6
-R7
+R8
+R9
 n@top

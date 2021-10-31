@@ -17,7 +17,6 @@ logic write_m = 0;
 logic exec_m = 0;
 logic write_s = 0;
 logic exec_s = 0;
-//logic[31:0] RegisterFile[31:0]
 
 
 
@@ -32,14 +31,6 @@ Slave slave(.clk(clk), .valid(valid), .start(start), .address(address), .ready(r
 
 
 always @(*) begin
-/*
-    register_file.address <= address;
-    register_file.data <= data;
-    register_file.exec <= exec;
-    register_file.write <= write;
-    result_data <= register_file.result_data;
-    */
-   // slave.address <= address;
 
     if(slave.ready == 1) begin
         address <= 16'h10;

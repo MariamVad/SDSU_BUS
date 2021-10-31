@@ -5,7 +5,6 @@ module Register_File(
     input logic write,
     input logic exec,
     output logic[31:0] data_read 
-   // output logic[31:0] RegisterFile[31:0]
 );
 
 
